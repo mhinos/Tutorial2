@@ -26,12 +26,14 @@ public class EjemploCheckbox {
 		//Hacer click al elemento correcto, en esta pagina es el label, no es el click al div o al input. 
 		driver.findElement(By.xpath("//div[contains(@class, 'ondisplay')]/section[2]/div/label")).click();
 		//Luego de hacer click, verificar el estado. esto si se ve en el input
-		Boolean estadocheckbox = driver.findElement(By.xpath("//div[contains(@class, 'ondisplay')]/section[2]/div/input")).isSelected();
+		boolean estadocheckbox = driver.findElement(By.xpath("//div[contains(@class, 'ondisplay')]/section[2]/div/input")).isSelected();
 		
 		System.out.println(estadocheckbox);
 		System.out.println("Script termino satisfactoriamente");
 		driver.switchTo().defaultContent();
 		driver.quit();
+		
+		//AGREGANDO COMENTARIO PARA PROBAR EL NUEVO COMMIT
 		
 	}
 

@@ -28,7 +28,7 @@ public class EjemploUsandoOtrosPaquetes {
 		driver.findElement(By.xpath(checkbox2)).click();
 		//Luego de hacer click, verificar el estado. esto si se ve en el input
 		//Boolean estadocheckbox = driver.findElement(By.xpath("//div[contains(@class, 'ondisplay')]/section[2]/div/input")).isSelected();
-		Boolean estadocheckbox = driver.findElement(By.xpath(ElementsFromWebsite.estadoCheckBox2())).isSelected();
+		boolean estadocheckbox = driver.findElement(By.xpath(ElementsFromWebsite.estadoCheckBox2())).isSelected();
 		
 		System.out.println(estadocheckbox);
 		System.out.println("Script termino satisfactoriamente");

@@ -30,7 +30,7 @@ public class EjemploCapturaPantalla {
 
         //Call getScreenshotAs method to create image file
 
-                File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+                File SrcFile=(File) scrShot.getScreenshotAs(OutputType.FILE);
 
             //Move image file to new destination
 
